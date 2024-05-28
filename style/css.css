@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EFE0D4;  
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+
+#banner {
+    background: url('../img/banner.jpg') no-repeat center center/cover;
+    color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-contenido{
+    padding: 2rem;
+}
+
+.banner-contenido h2 {
+    font-size: 2.5rem;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.banner-contenido p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.botonbanner {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.lista-productos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto {
+    text-align: center;
+    width: 30%;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.producto h3, .producto p {
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+
+.producto img {
+    width: 80%;
+    height: 80%;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#galeria{
+    display: flex;
+    text-align: center;
+    width: 70%;
+    height: 430px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.imagenesgaleria{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+    flex-wrap: wrap;
+}
+
+.imagenesgaleria:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.contenedor h2{
+    text-align: center;
+}
+
+#maps{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+
+#descuento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.botoncomprar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-image: linear-gradient(45deg, #1a73e8, #4285f4);
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-image 0.3s ease, transform 0.3s ease;
+}
+
+.botoncomprar:hover {
+    background-image: linear-gradient(45deg, #4285f4, #1a73e8);
+    transform: translateY(-3px);
+}
+
+.botoncomprar:active {
+    transform: translateY(0);
+}
+
+form {
+    padding: 50px 55px;
+    background-color: #e7d5c6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    margin: 0 auto;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+label {
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 15px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #ECE5E0;
+    border: 2px solid #a5968b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.btn {
+    padding: 0.75rem;
+    background-color: #333;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(194, 194, 194, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.perfil {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.perfil h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.perfil p {
+    font-size: 1rem;
+    color: #555;
+}
